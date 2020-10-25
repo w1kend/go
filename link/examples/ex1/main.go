@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/w1kend/go/linkParser"
+	"github.com/w1kend/go/link"
 	"strings"
 )
 
@@ -73,7 +73,7 @@ var exampleHtml = `<!DOCTYPE html>
 func main() {
 	r := strings.NewReader(exampleHtml)
 
-	links, err := linkParser.Parse(r)
+	links, err := link.Parse(r)
 	if err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-package linkParser
+package link
 
 import (
 	"fmt"
